@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
  
-contract Verify {
+contract Validator {
   function recoverAddress(bytes32 msgHash, uint8 v, bytes32 r, bytes32 s) public constant returns(address) {
       bytes memory prefix = "\x19Ethereum Signed Message:\n32";
       bytes32 prefixedHash = keccak256(prefix, msgHash);
