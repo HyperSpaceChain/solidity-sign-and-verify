@@ -3,7 +3,7 @@ const Ecies = require('eth-ecies');
 
 contract('TestEncrption', function (accounts) {
     it("Encription and decription test", async function () {
-        const privateKey = 'cc44f51a3935aa1d5c2f7b1cfc2b3d4903e57402413d1cb506a35a264bb8009f';
+        const privateKey = '77486819ac75e8cd4de24c7e07fb35b380958a12e6bcd7ab8e75a268c9dd448b';
         const wallet = EthereumWallet.fromPrivateKey(Buffer.from(privateKey, 'Hex'));
         console.log('address: ' + wallet.getAddressString());
         console.log('privateKey: ' + wallet.getPrivateKeyString());
