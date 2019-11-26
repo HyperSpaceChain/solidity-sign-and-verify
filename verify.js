@@ -2,7 +2,7 @@ const EthereumWallet = require('ethereumjs-wallet');
 const Console = require('console');
 const Web3 = require('web3');
 
-const privateKey = 'cc44f51a3935aa1d5c2f7b1cfc2b3d4903e57402413d1cb506a35a264bb8009f';
+const privateKey = '4735791f75e895710dea98efbe4b5ca86859de49e1c928097d3d00f7412a96e0';
 const wallet = EthereumWallet.fromPrivateKey(Buffer.from(privateKey, 'Hex'));
 Console.log('address: ' + wallet.getAddressString());
 Console.log('privateKey: ' + wallet.getPrivateKeyString());
